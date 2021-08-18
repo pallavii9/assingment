@@ -24,4 +24,9 @@ function myFunction() {
 	document.getElementById("result").innerHTML = text;
 }
 
-let arr = "asjf";
+function empQues() {
+	let empId = Number(prompt("Enter Id: "));
+	let salary = +(prompt("Enter Salary: "));
+	let increasedSalary = salary + (0.2 * salary);
+	console.log("Id:" + empId + "\nNew Salary " + increasedSalary);
+}
