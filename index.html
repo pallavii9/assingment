@@ -1,89 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<script  src="script.js"></script>
-</head>
-<body>
+  <head>
+    <title></title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <script>
+      /* Sum of elements of an array*/
+      function sum(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) sum += arr[i];
 
-	 <script>
-/* Sum of elements of an array*/
-	function sum(arr) {
-		let sum = 0; 
-		for (let i = 0; i < arr.length; i++)
-			sum += arr[i];
+        return sum;
+      }
 
-		return sum;
-	}
-	
-	
-	let arr = [10,22,34,45,20];
-	document.write("Sum of given array is " + sum(arr));
-	
+      let arr = [10, 22, 34, 45, 20];
+      document.write("Sum of given array is " + sum(arr));
 
-	
-/*Digits in reverse Order*/
-    let num = 4562;
-    // Function to reverse digits of num
-    function reversDigits(num) {
+      /*Digits in reverse Order*/
+      let num = 4562;
+      // Function to reverse digits of num
+      function reversDigits(num) {
         let rev_num = 0;
-        while(num > 0)
-        {
-            rev_num = rev_num * 10 + num % 10;
-            num = Math.floor(num / 10);
+        while (num > 0) {
+          rev_num = rev_num * 10 + (num % 10);
+          num = Math.floor(num / 10);
         }
         return rev_num;
-    }
- // function call  
-    document.write(reversDigits(num));
-     
-/*Computing Initials*/
-	
-	function printInitials(name)
-	{
-		if (name.length == 0)
-			return;
+      }
+      // function call
+      document.write(reversDigits(num));
 
-		document.write(name[0].toUpperCase());
+      /*Computing Initials*/
 
-		
-		for (let i = 1; i < name.length - 1; i++)
-			if (name[i] == ' ')
-				document.write(" " + name[i + 1].toUpperCase());
-	}
-	
-	let name = "Pallavi Sagar Hariyani";
-	printInitials(name);
-	
+      function printInitials(name) {
+        if (name.length == 0) return;
 
+        document.write(name[0].toUpperCase());
 
- 
-</script>
+        for (let i = 1; i < name.length - 1; i++)
+          if (name[i] == " ") document.write(" " + name[i + 1].toUpperCase());
+      }
 
+      let name = "Pallavi Sagar Hariyani";
+      printInitials(name);
+    </script>
 
-<script>
-public String fizzBuzz(Integer i) {
-String result = "";
-if (i % 3 == 0) {
-    result += "Fizz";
-}
-if (i % 5 == 0) {
-    result += "Buzz";
-}
-if (result.equals("")) {
-    result = i.toString();
-}
-return result;
+    <script>
+      public String fizzBuzz(Integer i) {
+      String result = "";
+      if (i % 3 == 0) {
+          result += "Fizz";
+      }
+      if (i % 5 == 0) {
+          result += "Buzz";
+      }
+      if (result.equals("")) {
+          result = i.toString();
+      }
+      return result;
 
-}
-</script>
+      }
+    </script>
 
-<!-- Reverse string -->
-<p>My name is pallavi</p>
+    <!-- Reverse string -->
+    <p>My name is pallavi</p>
 
-
-<button onclick="myFunction()">Click Me!</button>
-<p id="result"> </p>
-
-</body>
+    <button onclick="myFunction()">Click Me!</button>
+    <p id="result"></p>
+  </body>
 </html>
