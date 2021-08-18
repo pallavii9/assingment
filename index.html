@@ -7,15 +7,6 @@
   <body>
     <script>
       /* Sum of elements of an array*/
-      function sum(arr) {
-        let sum = 0;
-        for (let i = 0; i < arr.length; i++) sum += arr[i];
-
-        return sum;
-      }
-
-      let arr = [10, 22, 34, 45, 20];
-      document.write("Sum of given array is " + sum(arr));
 
       /*Digits in reverse Order*/
       let num = 4562;
@@ -47,24 +38,25 @@
     </script>
 
     <script>
-      public String fizzBuzz(Integer i) {
-      String result = "";
-      if (i % 3 == 0) {
+      function fizzBuzz(i) {
+        let result = "";
+        if (i % 3 == 0) {
           result += "Fizz";
-      }
-      if (i % 5 == 0) {
+        }
+        if (i % 5 == 0) {
           result += "Buzz";
-      }
-      if (result.equals("")) {
+        }
+        if (result.equals("")) {
           result = i.toString();
-      }
-      return result;
-
+        }
+        return result;
       }
     </script>
 
     <!-- Reverse string -->
     <p>My name is pallavi</p>
+
+    <button onclick="ques1()">Question 1</button>
 
     <button onclick="myFunction()">Click Me!</button>
     <p id="result"></p>
